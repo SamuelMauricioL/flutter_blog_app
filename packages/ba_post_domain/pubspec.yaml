@@ -6,6 +6,11 @@ publish_to: none
 environment:
   sdk: ^3.5.0
 
+dependencies:
+  ba_utils:
+    path: ../core/ba_utils
+  oxidized: 6.2.0
+
 dev_dependencies:
   mocktail: 1.0.4
   test: 1.25.8

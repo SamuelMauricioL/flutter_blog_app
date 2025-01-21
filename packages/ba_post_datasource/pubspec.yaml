@@ -11,6 +11,10 @@ dependencies:
     path: ../core/ba_api_client
   ba_post_domain:
     path: ../ba_post_domain
+  ba_utils:
+    path: ../core/ba_utils
+
+  oxidized: 6.2.0
 
 dev_dependencies:
   mocktail: 1.0.4
