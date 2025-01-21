@@ -6,6 +6,12 @@ publish_to: none
 environment:
   sdk: ^3.5.0
 
+dependencies:
+  ba_api_client:
+    path: ../core/ba_api_client
+  ba_post_domain:
+    path: ../ba_post_domain
+
 dev_dependencies:
   mocktail: 1.0.4
   test: 1.25.8
