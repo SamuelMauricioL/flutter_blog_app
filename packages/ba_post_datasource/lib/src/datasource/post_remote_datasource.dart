@@ -3,12 +3,12 @@
 import 'package:ba_api_client/ba_api_client.dart';
 import 'package:ba_post_datasource/src/models/post_model.dart';
 
-abstract class PostDatasource {
+abstract class PostRemoteDataSource {
   Future<List<PostModel>> getPosts();
 }
 
-class PostRemoteDatasourceImpl implements PostDatasource {
-  PostRemoteDatasourceImpl({
+class PostRemoteDataSourceImpl implements PostRemoteDataSource {
+  PostRemoteDataSourceImpl({
     required this.client,
   });
 

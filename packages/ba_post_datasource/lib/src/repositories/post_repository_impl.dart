@@ -6,13 +6,13 @@ import 'package:ba_utils/ba_utils.dart';
 import 'package:oxidized/oxidized.dart';
 
 class PostRepositoryImpl implements PostRepository {
-  PostRepositoryImpl({required this.datasource});
-  final PostDatasource datasource;
+  PostRepositoryImpl({required this.remoteDataSource});
+  final PostRemoteDataSource remoteDataSource;
 
   @override
   Future<Result<List<Post>, Failure>> getPosts() async {
     try {
-      final list = await datasource.getPosts();
+      final list = await remoteDataSource.getPosts();
       return Result.ok(list.map(PostExtension.toEntity).toList());
     } on ApiException catch (e) {
       return Result.err(ServiceFailure(message: e.userMessage));
