@@ -9,6 +9,7 @@ Dart version: 3.5.0
 
 ## File structure:
 
+```
 |-- lib/
 | |-- di/
 | |-- app/
@@ -35,6 +36,7 @@ Dart version: 3.5.0
 
 |-- melos.yaml
 |--
+```
 
 ## Current Resources
 
@@ -70,3 +72,7 @@ steps to use:
    melos test:selective_unit_test: # this one runs "flutter test"
 
    melos build_runner # Run build_runner for all packages that have this dependency
+
+```
+
+```
