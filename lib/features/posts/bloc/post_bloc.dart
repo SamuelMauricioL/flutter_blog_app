@@ -42,7 +42,7 @@ class PostBloc extends Bloc<PostBlocEvent, PostBlocState> {
       err: (e) {
         emit(
           PostBlocState(
-            error: e.toString(),
+            error: e.message,
             status: PostStatus.failure,
           ),
         );

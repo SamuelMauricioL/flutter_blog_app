@@ -1,6 +1,6 @@
 part of 'post_bloc.dart';
 
-abstract class PostBlocEvent extends Equatable {
+sealed class PostBlocEvent extends Equatable {
   const PostBlocEvent();
 
   @override
