@@ -43,3 +43,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   generate: true
+
+  assets:
+    - packages/core/ba_ui/assets/images/
