@@ -26,7 +26,7 @@ class BaTextStyle {
 
   static const TextStyle blackNormalMd = TextStyle(
     fontSize: FontSizeValues.md,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w400,
     color: BaColorValues.blackText,
   );
 
