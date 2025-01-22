@@ -1,4 +1,4 @@
-# App Mobile Piscilago Flutter
+# Flutter Blog App
 
 ## Architecture
 
