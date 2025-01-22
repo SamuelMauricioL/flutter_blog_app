@@ -74,3 +74,7 @@ steps to use:
    `melos test:selective_unit_test:` # this one runs "flutter test"
 
    `melos build_runner` # Run build_runner for all packages that have this dependency
+
+## Demo
+
+<img src="https://github.com/user-attachments/assets/139705cb-614f-4866-bbd3-2ebbf54ceff1" width="600">
