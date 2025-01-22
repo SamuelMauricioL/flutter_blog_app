@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: ba_utils
+dependency_overrides:
+  ba_utils:
+    path: ../core/ba_utils

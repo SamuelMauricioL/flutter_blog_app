@@ -1,0 +1,24 @@
+name: app_mobile_piscilago_flutter
+
+packages:
+  - packages/*
+  - packages/core/*
+
+scripts:
+  analyze:
+    exec: dart analyze .
+
+  build_runner:
+    run: melos exec --depends-on="build_runner" -- dart run build_runner build -d
+    description: Run build_runner for all packages that have this dependency
+
+  test:selective_unit_test:
+    exec: flutter test
+    dir-exists: "test"
+    fail-fast: true
+    description: Run selective unit tests
+
+  test:all_unit_tests:
+    exec: flutter test
+    no-select: true
+    description: Run all unit testsAdditionally, you can incorporate commands for analysis and code coverage. Melos offers a GUI interface for seamless execution without terminal input.
