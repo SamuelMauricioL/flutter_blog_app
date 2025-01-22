@@ -1,4 +1,5 @@
 import 'package:ba_post_domain/ba_post_domain.dart';
+import 'package:ba_ui/ba_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_blog_app/posts/widgets/post_list.dart';
 
@@ -9,11 +10,10 @@ class PostTapBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
+    return SafeArea(
       child: DefaultTabController(
         length: 2,
         child: NestedScrollView(
-          // controller: _scrollController,
           headerSliverBuilder: (context, innerBoxIsScrolled) => [
             const SliverAppBar(
               title: SizedBox(
@@ -22,13 +22,13 @@ class PostTapBar extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Blog',
-                      // style: $font.bold.copyWith(fontSize: 20),
+                      'Posts',
+                      style: BaTextStyle.blackBoldlXl,
                       textAlign: TextAlign.left,
                     ),
                     Text(
-                      'Subtitulo de ejemplo',
-                      // style: $font.medium.copyWith(fontSize: 14),
+                      'community posts',
+                      style: BaTextStyle.blackNormalMd,
                     ),
                   ],
                 ),
@@ -40,7 +40,7 @@ class PostTapBar extends StatelessWidget {
               const TabBar(
                 tabs: [
                   Tab(text: 'Posts'),
-                  Tab(text: 'Nothing'),
+                  Tab(text: 'WIP'),
                 ],
               ),
               Expanded(

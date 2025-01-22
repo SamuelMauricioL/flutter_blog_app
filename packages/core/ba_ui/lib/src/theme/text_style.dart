@@ -35,4 +35,10 @@ class BaTextStyle {
     fontWeight: FontWeight.w500,
     color: BaColorValues.blueText,
   );
+
+  static const TextStyle blackBoldlXl = TextStyle(
+    fontSize: FontSizeValues.xl,
+    fontWeight: FontWeight.bold,
+    color: BaColorValues.blackText,
+  );
 }
