@@ -19,11 +19,11 @@ dependencies:
   ba_utils:
     path: ./packages/core/ba_utils
 
-  bloc: 8.1.4
+  bloc: 9.0.0
   equatable: 2.0.7
   flutter:
     sdk: flutter
-  flutter_bloc: 8.1.6
+  flutter_bloc: 9.0.0
   flutter_localizations:
     sdk: flutter
   gap: 3.0.1
@@ -33,7 +33,7 @@ dependencies:
 
 dev_dependencies:
   auto_route_generator: 9.0.0
-  bloc_test: 9.1.7
+  bloc_test: 10.0.0
   build_runner: 2.4.12
   flutter_test:
     sdk: flutter
