@@ -50,7 +50,9 @@ Dart version: 3.5.0
 
 auto_route is useful to autogenerate routes using the following command:
 
+```
 dart run build_runner build --delete-conflicting-outputs
+```
 
 ## [Melos](https://pub.dev/packages/melos)
 
@@ -59,20 +61,16 @@ steps to use:
 
 1. enable melos global:
 
-   dart pub global activate melos
+   `dart pub global activate melos`
 
 2. run configured scripts
 
-   melos run analyze # this one runs "dart analyze ."
+   `melos run analyze` # this one runs "dart analyze ."
 
-   melos bootstrap # this one runs "flutter pub get"
+   `melos bootstrap` # this one runs "flutter pub get"
 
-   melos clean # this one runs "flutter clean"
+   `melos clean` # this one runs "flutter clean"
 
-   melos test:selective_unit_test: # this one runs "flutter test"
+   `melos test:selective_unit_test:` # this one runs "flutter test"
 
-   melos build_runner # Run build_runner for all packages that have this dependency
-
-```
-
-```
+   `melos build_runner` # Run build_runner for all packages that have this dependency
