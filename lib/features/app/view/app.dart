@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_blog_app/l10n/l10n.dart';
 import 'package:flutter_blog_app/features/posts/view/post_view.dart';
 
 class App extends StatelessWidget {
@@ -11,8 +10,6 @@ class App extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
       home: const PostView(),
     );
   }

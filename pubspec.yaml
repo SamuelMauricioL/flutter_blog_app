@@ -7,6 +7,7 @@ environment:
   sdk: ^3.5.0
 
 dependencies:
+  auto_route: 9.3.0+1
   ba_api_client:
     path: ./packages/core/ba_api_client
   ba_post_datasource:
@@ -31,7 +32,9 @@ dependencies:
   melos: 6.3.2
 
 dev_dependencies:
+  auto_route_generator: 9.0.0
   bloc_test: 9.1.7
+  build_runner: 2.4.12
   flutter_test:
     sdk: flutter
   mocktail: 1.0.4
