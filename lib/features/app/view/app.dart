@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_blog_app/l10n/l10n.dart';
-import 'package:flutter_blog_app/posts/view/post_view.dart';
+import 'package:flutter_blog_app/features/posts/view/post_view.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

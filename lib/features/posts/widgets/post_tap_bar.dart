@@ -1,7 +1,7 @@
 import 'package:ba_post_domain/ba_post_domain.dart';
 import 'package:ba_ui/ba_ui.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_blog_app/posts/widgets/post_list.dart';
+import 'package:flutter_blog_app/features/posts/widgets/post_list.dart';
 
 class PostTapBar extends StatelessWidget {
   const PostTapBar({required this.posts, super.key});

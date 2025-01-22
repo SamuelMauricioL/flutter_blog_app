@@ -1,6 +1,6 @@
 import 'package:ba_api_client/ba_api_client.dart';
 import 'package:ba_utils/ba_utils.dart';
-import 'package:flutter_blog_app/posts/di/post_module.dart';
+import 'package:flutter_blog_app/features/posts/di/post_module.dart';
 import 'package:get_it/get_it.dart';
 
 class Get {
