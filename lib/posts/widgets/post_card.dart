@@ -9,33 +9,18 @@ class PostCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      color: BaColorValues.cardBackground,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(25),
-        side: const BorderSide(color: BaColorValues.cardBorder),
-      ),
-      elevation: 0,
-      margin: const EdgeInsets.all(13),
+    return BaCard(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 20),
+            padding: BaPadding.lgHorizontal,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Chip(
-                  label: const Text(
-                    'Community',
-                    style: BaTextStyle.whiteLightSm,
-                  ),
-                  backgroundColor: BaColorValues.chipBackground,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(25),
-                  ),
-                ),
-                const SizedBox(height: 10),
+                Spacing.lg,
+                const BaChip(label: 'Community'),
+                Spacing.md,
                 if (post.title.isNotEmpty)
                   Text(
                     post.title.capitalize,
@@ -48,20 +33,14 @@ class PostCard extends StatelessWidget {
                     overflow: TextOverflow.fade,
                     style: BaTextStyle.blackNormalMd,
                   ),
-                TextButton(
-                  style: ButtonStyle(
-                    padding: WidgetStateProperty.all<EdgeInsets>(
-                      const EdgeInsets.all(0),
-                    ),
-                  ),
-                  onPressed: onPressed,
-                  child: const Row(
+                const BaTextButton(
+                  child: Row(
                     children: [
                       Text(
                         'Read more',
                         style: BaTextStyle.blueNormalMd,
                       ),
-                      SizedBox(width: 5),
+                      Spacing.sm,
                       Icon(
                         Icons.arrow_right_alt,
                         color: BaColorValues.blueText,
@@ -70,26 +49,15 @@ class PostCard extends StatelessWidget {
                     ],
                   ),
                 ),
+                Spacing.lg,
               ],
             ),
           ),
-          SizedBox(
-            width: double.infinity,
-            height: 150,
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25),
-                image: const DecorationImage(
-                  fit: BoxFit.cover,
-                  image: BaAssets.banner,
-                ),
-              ),
-            ),
+          const BaBanner(
+            imagePath: BaAssets.banner,
           ),
         ],
       ),
     );
   }
-
-  void onPressed() {}
 }
