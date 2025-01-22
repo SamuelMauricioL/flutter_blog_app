@@ -26,9 +26,9 @@ class PostCard extends StatelessWidget {
                     post.title.capitalize,
                     style: BaTextStyle.blackBoldXxxl,
                   ),
-                if (post.body.isNotEmpty)
+                if (post.description.isNotEmpty)
                   Text(
-                    post.body.capitalize,
+                    post.description.capitalize,
                     maxLines: 4,
                     overflow: TextOverflow.fade,
                     style: BaTextStyle.blackNormalMd,

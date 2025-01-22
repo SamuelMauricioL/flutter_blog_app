@@ -44,7 +44,7 @@ void main() {
 
   testWidgets('renders PostTapBar when state is loaded', (tester) async {
     final posts = [
-      const Post(id: 1, userId: 1, title: 'Test Post', body: 'Content'),
+      const Post(id: 1, title: 'Test Post', description: 'Content'),
     ];
     when(() => mockPostBloc.state)
         .thenReturn(PostBlocState(status: PostStatus.loaded, posts: posts));

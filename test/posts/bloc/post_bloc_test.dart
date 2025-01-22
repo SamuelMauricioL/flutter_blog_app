@@ -25,7 +25,7 @@ void main() {
 
   group('PostBloc', () {
     const posts = [
-      Post(id: 1, userId: 1, title: 'Test Post', body: 'Content'),
+      Post(id: 1, title: 'Test Post', description: 'Content'),
     ];
     const failureMessage = 'Something went wrong';
 
